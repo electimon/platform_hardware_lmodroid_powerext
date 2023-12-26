@@ -1,18 +1,11 @@
 #include "PowerExt.h"
 #include <android/binder_manager.h>
 #include <android/log.h>
+
+#define LOG_TAG "PowerExtClient"
 #include <log/log.h>
 
 #include <aidl/android/hardware/power/IPower.h>
-
-#ifdef LOG_TAG
-#undef LOG_TAG
-#define LOG_TAG "PowerExtClient"
-#else
-#define LOG_TAG "PowerExtClient"
-#endif
-
-using namespace aidl::android::hardware::power;
 
 namespace android {
     // Construction Workers
